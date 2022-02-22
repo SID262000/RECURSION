@@ -22,7 +22,7 @@ using namespace std;
 // Print all the subsequences from n array
 // T.C: O(2^n * n) // For each element we have 2 choices, so for n choices 2^n;since we are using a
 // for loop to print all these 2^n subsequences so the totla T.C: O(2^n *n)
-// S.C: O(n)-> At any particular moment, we have max. 3 recursive call waiting inside the stack
+// S.C: O(n)-> At any particular moment, we have max. n(3) recursive call waiting inside the stack
 void PrintSubsequence(int indx,vector<int>&arr,int n, vector<int>&pattern)
 {
     if(indx>=n) //base condition: when the travelling pointer(index) reaches the end of the array
