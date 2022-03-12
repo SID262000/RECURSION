@@ -20,9 +20,9 @@ void SumSubsequence(int indx, vector<int>&arr, int n, int &cnt, int sum, int k)
     //Case-1: When we consider the current element into our subsequence
     sum+=arr[indx];
     SumSubsequence(indx+1,arr,n,cnt,sum,k);
+    sum-=arr[indx];
 
     //Case-2: When we reject/not-take the current element into our subsequence
-    sum-=arr[indx];
     SumSubsequence(indx+1,arr,n,cnt,sum,k);
 }
 int main()
